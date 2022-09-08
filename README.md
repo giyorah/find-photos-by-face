@@ -12,7 +12,7 @@ All you need to do is specify the
 The tool will create a new folder named after the person it searches for (provided you named the person's photo accordingly). This folder will be populated with (copies of) the photos the person appears in.
 
 ## Setup
-```shell
+```
 git clone https://github.com/giyorahy/find-photos-by-face.git
 cd find-photos-by-face/src
 ```
