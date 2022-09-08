@@ -2,14 +2,14 @@
 
 This tool uses [face detection](https://github.com/opencv/opencv_zoo/tree/master/models/face_detection_yunet) and [face recognition](https://github.com/opencv/opencv_zoo/tree/master/models/face_recognition_sface) technologies to help you quickly and easily identify and organize photos of friends and family.
 
-In general, face detection distinguishes faces from other objects in an image. For example, face detection lets the tool know when there is a face in a photo so that it can further analyze it. Facial grouping identifies and groups similar faces across multiple photos in your personal collection.
+In general, face detection distinguishes faces from other objects in an image. For example, face detection lets the tool know when there is a face in a photo so that it can further analyze it. Face recognition identifies and groups similar faces across multiple photos in your folder(s).
 
 ## Brief
 All you need to do is specify the
-* Path to an photo containing a single face to search for
+* Path to a (frontal face) photo of a person to search for
 * Path to a folder with photos to search in.
 
-The tool will create a new folder with the same name as the face photo's. This folder will be populated with (copies of) the photos that have the same person in them.
+The tool will create a new folder named after the person it searches for (provided you named the person's photo accordingly). This folder will be populated with (copies of) the photos the person appears in.
 
 ## Setup
 ```shell
@@ -18,7 +18,7 @@ cd find-photos-by-face/src
 ```
 
 ## Usage
-```shell
+```
 usage: find.py [-h] [--image IMAGE] [--folder FOLDER] [--score_threshold SCORE_THRESHOLD] [--backend BACKEND]
                [--target TARGET]
 
